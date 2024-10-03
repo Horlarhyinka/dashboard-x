@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="left-menus">
+            <span class="hamburger">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3_359)">
+                    <path d="M4 12H20" stroke="#B4B4B4" stroke-width="1.39733" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 6H20" stroke="#B4B4B4" stroke-width="1.39733" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 18H20" stroke="#B4B4B4" stroke-width="1.39733" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_3_359">
+                    <rect width="24" height="24" rx="6.288" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    
+            </span>
+            <span>Dashboard</span>
+
+        </div>
+        <div class="right-menus">
+            <div class="friends-menu">
+                <div class="avatars">
+
+                </div>
+                <div class="menu-avatars">
+                    <img src="./assets/img/menu-avatar1.png" />
+                    <img src="./assets/img/menu-avatar2.png" />
+                    <img src="./assets/img/menu-avatar3.png" />
+                </div>
+                <p>+4</p>
+            </div>
+            <div class="add-btn">
+                <span>
+                <img src="/assets/icon/add.svg" />
+                </span>
+                Add
+            </div>
+                <span class="menu-options-icn">
+                    <img src="/assets/icon/menu.svg" />
+                        
+                </span>
+        </div>
+    </header>
+    <div class="content">
+        <div class="graphs">
+            <div class="top-row">
+                <div class="graph line">
+                    <h4 class="graph-head" >User Signups</h4>
+                    <div class="keys">
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Basic</span></div>
+                        </div>
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Premium</div>
+                        </div>
+                    </div>
+                    <div class="line-chart">
+                        <img src="/assets/img/line-chart.svg" />
+                    </div>
+                    
+    
+                </div>
+                <div class="graph donut">
+                    <h4 class="graph-head" >User Signups</h4>
+                    <div class="keys">
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Lagos <span>50%</span></div>
+                        </div>
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Abuja <span>30%</span></div>
+                        </div>
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Benin <span>20%</span></div>
+                        </div>
+
+                    </div>
+                    <canvas class="donut-chart" id="donut-chart" >
+
+                    </canvas>
+                    <div class="chart-center">
+                        <span>Total</span>
+                        <p>100m</p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="base-row">
+                <div class="graph bar">
+                    <h4 class="graph-head" >No. of Orders by City</h4>
+                    <div class="keys">
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Lagos</span></div>
+                        </div>
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Abuja</div>
+                        </div>
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Benin</span></div>
+                        </div>
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Niger</div>
+                        </div>
+                        <div class="key">
+                            <div class="color"></div>
+                            <div class="value">Others</div>
+                        </div>
+                    </div>
+                    <div class="bar-chart">
+                        <img src="/assets/img/bar-chart.svg" />
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customers">
+            <div class="customers-header">
+                <h4>Top customers</h4>
+                <button>View All <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.641724 0.5896H5.76972M5.76972 0.5896V5.71759M5.76972 0.5896L0.641724 5.71759" stroke="#FAFAFA" stroke-width="1.0256" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></button>
+            </div>
+            <div class="customers-titles">
+                <p>Customer</p>
+                <p>Total Spending</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img1.png" />
+                    <div class="info">
+                        <p class="name">Long John</p>
+                        <p class="email">orevbajohn@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img2.png" />
+                    <div class="info">
+                        <p class="name">Long John</p>
+                        <p class="email">orevbajohn@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img3.png" />
+                    <div class="info">
+                        <p class="name">Long John</p>
+                        <p class="email">orevbajohn@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img4.png" />
+                    <div class="info">
+                        <p class="name">V Morgan</p>
+                        <p class="email">vmorgan@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img5.png" />
+                    <div class="info">
+                        <p class="name">Teeblix</p>
+                        <p class="email">teeblix@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img6.png" />
+                    <div class="info">
+                        <p class="name">Freddie Cooper</p>
+                        <p class="email">freddiecooper@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img7.png" />
+                    <div class="info">
+                        <p class="name">Avosuahi</p>
+                        <p class="email">avodesign@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img8.png" />
+                    <div class="info">
+                        <p class="name">Ajide Victor</p>
+                        <p class="email">ajidevictor@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img9.png" />
+                    <div class="info">
+                        <p class="name">Favour Thomas</p>
+                        <p class="email">favourthomas@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img-10.png" />
+                    <div class="info">
+                        <p class="name">Rare Diamond</p>
+                        <p class="email">rarediamond@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+            <div class="customer-card" >
+                <div class="profile">
+                    <img src="./assets/img/customer-img-11.png" />
+                    <div class="info">
+                        <p class="name">Timothy</p>
+                        <p class="email">timodesign@gmail.com</p>
+                    </div>
+                </div>
+                <p class="spending">+$1,999.00</p>
+            </div>
+        </div>
+
+    </div>
+    <script type="application/javascript" src="./donut-chart.js" ></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+html{
+    background-color: #1E1E1E;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    color: white;
+}
+
+body{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    display: inline-block;
+    margin: 0px;
+}
+
+header{
+    background-color: rgba(64, 69, 112, 0.2);
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -7px;
+    align-items: center;
+    padding: 12px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 0.5px solid #7682A5;
+}
+
+header .left-menus{
+    display: inline-flex;
+    align-items: center;
+    padding: 2px;
+
+}
+
+header .left-menus span{
+    margin: 0px 3px;
+}
+
+header .right-menus{
+    display: inline-flex;
+    align-items: center;
+}
+
+header .friends-menu{
+    border: 0.5px solid #7682A5;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 42px;
+    width: 80px;
+    height: 24px;
+    padding: 4px 5px;
+}
+
+header .menu-avatars{
+    width: 65%;
+    display: inline-flex;
+}
+
+header .menu-avatars img{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-left: -5px;
+}
+
+
+header .menu-avatars img:nth-of-type(1){
+    margin-left: 0px;
+}
+
+header .add-btn{
+    display: inline-flex;
+    margin: 0px 10px;
+    border-radius: 5px;
+    border: 0.5px solid #7682A5;
+    padding: 4px 8px;
+    align-items: center;
+}
+
+header .menu-options-icn{
+    margin: 4px 12px;
+}
+
+.graphs{
+    display: inline-block;
+    width: 98%;
+    max-width: 830px;
+    padding: 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+}
+
+.graph{
+    display: inline-block;
+    width: 100%;
+    max-width: 380px;
+    height: 310px;
+    background-color: rgba(64, 69, 112, 0.2);
+    border: 0.5px solid #7682A5;
+    text-align: center !important;
+    position: relative;
+    margin: 2px;
+    vertical-align: top;
+    border-radius: 4px;
+}
+
+.base-row .graph{
+    max-width: 770px !important;
+}
+
+.customers{
+    display: inline-block;
+    width: 98%;
+    max-width: 370px;
+    box-sizing: border-box;
+    background-color: rgba(64, 69, 112, 0.2);
+    max-height: calc(100vh - 60px);
+    overflow-y: hidden;
+    border-radius: 4px;
+    border: 0.5px solid #7682A5;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.customers-header{
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #939FAE;
+
+}
+
+.customers-header h4{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+    font-weight: "Inter", sans-serif;
+    letter-spacing: 0.2px;
+}
+
+.customers-header button{
+    background-color: #010625;
+    color: white;
+    font-size: 11px;
+    padding: 8px 12px;
+    height: 35px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0.5px solid #6F7289;
+    vertical-align: middle;
+    margin: 12px;
+
+}
+
+.customers-titles{
+    border-bottom: 0.5px solid #6F7289;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.customers-titles p{
+    margin: 0px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.customer-card{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid #6F7289;
+}
+
+.customer-card .profile{
+    display: inline-flex;
+
+}
+
+.customer-card img{
+    width: 45px;
+    height: 45px;
+}
+
+.customer-card .info{
+    display: inline-block;
+    margin-left: 12px;
+    text-align: left;
+
+}
+
+.customer-card .info p{
+    margin: 4px 2px;
+    font-weight: 500;
+}
+
+
+.customer-card .email{
+    font-weight: 400;
+    color: #D3E7FF;
+
+}
+
+.customer-card .spending{
+    margin: 0px 8px;
+}
+
+.content{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+.base-row .graph{
+    margin-top: 4px;
+
+}
+
+.donut-chart{
+    width: 200px;
+    max-width: 200px !important;
+    min-width: 200px;
+    height: 200px !important;
+    max-height: 200px;
+    min-height: 200px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    
+}
+
+.graph-head{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.graph .keys{
+    display: inline-flex;
+    align-items: center;
+}
+
+.graph .key{
+    display: inline-flex;
+    margin: 13px;
+    align-items: center;
+}
+
+.graph .key .color{
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.chart-center {
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    top: 175px;
+}
+
+.chart-center span{
+    font-family: "Inter", sans-serif;
+    font-size: 14.94px;
+    font-weight: 400;
+    line-height: 18.08px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.466);
+}
+
+.chart-center p{
+    font-family: "Inter";
+    font-size: 14.94px;
+    font-weight: 500;
+    line-height: 18.08px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    margin: 0px;
+
+}
+
+.line-chart{
+    margin-bottom: 12px;
+}
+
+.graph.donut .key:nth-child(1) .color {
+    background-color: #95D1FD; 
+}
+
+.graph.donut .key:nth-child(2) .color {
+    background-color: #E9067C; 
+}
+
+.graph.donut .key:nth-child(3) .color {
+    background-color: #9797FC; 
+}
+
+.graph.line .key:nth-child(1) .color {
+    background-color: #E9067C; 
+}
+
+.graph.line .key:nth-child(2) .color {
+    background-color: #94D0FE; 
+}
+
+.graph.bar .key:nth-child(1) .color {
+    background-color: #95D1FD; 
+}
+
+.graph.bar .key:nth-child(2) .color {
+    background-color: #E9067C; 
+}
+
+.graph.bar .key:nth-child(3) .color {
+    background-color: #9797FC; 
+}
+
+.graph.bar .key:nth-child(4) .color {
+    background-color: #F6C263; 
+}
+
+.graph.bar .key:nth-child(5) .color {
+    background-color: #E3E0DE; 
+}
+
+
+
+@media screen and (max-width: 860px){
+    .base-row{
+        display: none;
+    }
+
+    .graph{
+        max-width: unset;
+    }
+
+    .customers{
+        max-width: unset;
+    }
+}
